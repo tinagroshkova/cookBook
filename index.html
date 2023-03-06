@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>CookBook</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home Page</a></li>
+                <li class="liked">
+                    <a href="#cookies">My cookies</a>
+                    <span class="material-symbols-outlined">favorite</span>
+                    <p id="liked-count"></p>
+                </li>
+                <li class="blocked">
+                    <a href="#blackCookies">Bad cookies</a>
+                    <span class="material-symbols-outlined">heart_broken</span>
+                    <p id="blocked-count"></p>
+                </li>
+                <li><a href="#date">Date</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="page" id="home">
+
+            <div id="filter-field">
+                <input type="text" id="search" placeholder="What are you looking for?">
+            </div>
+            <div id="results"></div>
+        </div>
+
+        <div class="page" id="cookies">Cookies Page</div>
+
+        <div class="page" id="blackCookies">Bad, Bad cookies</div>
+
+        <div class="page" id="date-container">
+            <div id="date">
+                <h1 id="date-heading">Choose one to date:</h1>
+                <ol id="liked-list"></ol>
+            </div>
+        </div>
+    </main>
+    <script src="./js/data.js"></script>
+    <script src="./js/model/User.js"></script>
+    <script src="./js/model/CookiesManager.js"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+body {
+    font-size: 20px;
+    background-color: rgb(197, 150, 197, 0.5);
+}
+
+#results {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: rgb(33, 29, 29);
+    align-self: center;
+    justify-content: center;
+
+}
+
+li a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 20px;
+    color: white;
+}
+
+.card {
+    width: 260px;
+    height: 400px;
+    margin: 30px;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: 0 8px 6px -6px black;
+    border-radius: 5%;
+}
+
+.card img {
+    width: 160px;
+    height: auto;
+    margin: 20px;
+}
+
+.card h6 {
+    font-size: 14px;
+    margin: 10px;
+}
+.card button {
+    background-color:  rgb(33, 29, 29);
+    color: white;
+    border: none;
+    height: 30px;
+    border-radius: 15%;
+}
+
+.card .likeBtn {
+    margin-top: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+}
+
+.card .blockBtn {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+
+#search {
+    position: absolute;
+    top: 70px;
+    left: 52px;
+    height: 30px;
+    border: none;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.liked {
+    background-color: hotpink;
+}
+
+.blocked {
+    background-color: grey;
+}
+
+.neutral {
+    background-color: white;
+}
+
+nav li {
+    position: relative;
+}
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 800,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+span {
+    color: white;
+    padding: 10px;
+}
+
+#liked-count,
+#blocked-count {
+    position: absolute;
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+    top: 22px;
+    right: 18px;
+}
+
+#date {
+    flex-direction: column;
+}
+
+#date h1 {
+    margin: 60px 0 0 60px;
+    font-size: 48px;
+  }
+
+ol {
+    list-style: decimal;
+    margin-top: 200px;
+
+}
+
+ol {
+    list-style: decimal;
+    margin: 20px 0 0 100px;
+}
+
+#date li {
+    margin: 10px;
+}
+
+
+.removeBtn {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    margin-left: 10px;
+}
+
+
+
+
